@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo MSCP - Contactate con nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
+            <div class="container-fluid">
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container">
+                      <a class="navbar-brand" href="./index.html">
+                        <img src="../img/logo.png" alt="logo" width="30" height="24">
+                        Grupo MSCP
+                      </a>
+                    </div>
+                  </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/seguros.html">Nuestros seguros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/quienes-somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/faq.html">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <form class="form" id="formulario">
+            <label class="labels" for="Nombre">
+                Nombre
+                <input type="text" id="Nombre" required>
+            </label>
+            <label class="labels" for="telefono">
+                Teléfono
+                <input type="number" id="telefono" required>
+            </label>
+            <label class="labels" for="email">
+                E-mail
+                <input type="email" id="email">
+            </label>
+            <label class="labels" for="mensaje">
+                Mensaje
+                <textarea name="texto" id="mensaje" cols="30" rows="5" required required placeholder="Escribí tu mensaje"></textarea>
+            </label>
+            <p>¿Necesitas que te llamemos?</p>
+            <label class="labels siono" for="si">
+                <input type="radio" name="siono" id="si"> Si
+            </label>
+            <label class="labels siono" for="no">
+                <input type="radio" name="siono" id="no"> No
+            </label>
+            <select name="provincia" id="provincia">
+                <option disabled selected>Seleccioná una provincia</option>
+                <option>Ciudad Autónoma de Buenos Aires</option>
+                <option>Buenos Aires</option>
+                <option>La Pampa</option>
+                <option>Entre Ríos</option>
+                <option>Corrientes</option>
+                <option>Misiones</option>
+                <option>Formosa</option>
+                <option>Salta</option>
+                <option>Jujuy</option>
+                <option>La Rioja</option>
+                <option>Catamarca</option>
+                <option>San Juan</option>
+                <option>Mendoza</option>
+                <option>Córdoba</option>
+                <option>Santiago Del Estero</option>
+                <option>Tierra Del Fuego</option>
+                <option>Santa Cruz</option>
+                <option>Chubut</option>
+                <option>Rio Negro</option>
+                <option>San Luis</option>
+                <option>Santa Fe</option>
+                <option>Neuquén</option>
+                <option>Tucumán</option>
+                <option>Chaco</option>
+            </select>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>
+        </form>
+    </main>
+    <footer>
+        <nav class="footer">
+            <h1 class="titulofooter">Redes sociales</h1>
+            <ul class="redes">
+                <li class="redesimg">
+                    <img class="imgRedes" src="../img/wp.png" alt="whatsapp">
+                </li>
+
+                <li class="redesimg">
+                    <img class="imgRedes" src="../img/face.jpg" alt="facebook">
+                </li>
+
+                <li class="redesimg">
+                    <img class="imgRedes" src="../img/insta.png" alt="instagram">
+                </li>
+
+                <li class="redesimg">
+                    <img class="imgRedes" src="../img/twitter.png" alt="twitter">
+                </li>
+            </ul>
+            <h2 class="domicilio">Balbanera, Ciudad Autónoma de Buenos Aires, Argentina</h2>
+            <h3 class="derechos">Todos los derechos reservados</h3>
+        </nav>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+/* CSS HEX
+--antiflash-white: #e7ecefff;
+--yinmn-blue: #274c77ff;
+--air-superiority-blue: #6096baff;
+--uranian-blue: #a3cef1ff;
+--eerie-black: #1f1f1fff; */
+
+.container-fluid {
+    background-color: #274c77ff;
+ }
+ 
+ .navbar-brand {
+     color: #274c77ff;
+ }
+
+.hero {
+    background-image: url("../img/fondo.jpg");
+    height: 91vh;
+    max-width: 100%;
+}
+
+.title {
+    font-weight: bold;
+}
+
+/*Cartitas*/
+
+.cartitas {
+    display: flex;
+    margin-inline: 10px;
+}
+
+.cartita {
+    width: 24%;
+    padding: 10px;
+    background-color: #6096baff;
+    border-radius: 8px;
+    display: inline-block;
+    margin-inline: 10px;
+    margin-block: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: groove;
+    border-color: #1F1F1FFF;
+    position: relative;
+    top: 10px;
+}
+
+.cartita__imagen {
+    width: 100%;
+}
+
+.cartita__titulo {  
+        color: #e7ecefff;
+        font-size: 22px;
+        margin-bottom: 5px;  
+}
+
+.cartita__parrafo {
+    font-size: 14px;
+    color: #e7ecefff;
+}
+
+.cartita__boton {
+    background-color: #1F1F1FFF;
+    color: #e7ecefff;
+    border: 0;
+    padding: 9px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.valores {
+    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.3fr repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "... valor1 valor2 valor3 ...";
+}
+
+.valor1 {
+    width: 200px;
+    height: 200px;
+    background-color: #6096baff;
+    color: #e7ecefff;
+    grid-area: valor1;
+    border-radius: 25px;
+    border: groove;
+    border-color: #1F1F1FFF;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.valor2 {
+    width: 200px;
+    height: 200px;
+    background-color: #6096baff;
+    color: #e7ecefff;
+    grid-area: valor2;
+    border-radius: 25px;
+    border: groove;
+    border-color: #1F1F1FFF;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.valor3 {
+    width: 200px;
+    height: 200px;
+    background-color: #6096baff;
+    color: #e7ecefff;
+    grid-area: valor3;
+    border-radius: 25px;
+    border: groove;
+    border-color: #1F1F1FFF;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.valores > div {
+    place-content: center;
+}
+
+.redesimg {display: inline-block;
+    margin-inline: 10px;}
+
+.imgRedes {width: 30px;}
+
+.titulofooter {color: #e7ecefff;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;}
+
+.footer {background-color: #274c77ff;
+        padding: 10px;
+        margin-top: 40px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+}
+
+.redes {
+    padding-left: 0;
+}
+
+.redesimg{
+    justify-content: center;
+}
+
+.domicilio {color: #e7ecefff; 
+            font-size: 16px;
+            font-weight: bold;}
+            
+.derechos {color: #e7ecefff; 
+            font-size: 10px;
+            font-weight: bold;}
+
+.form {
+        background-color: #6096baff;
+        margin-top: 15px;
+        margin-left: 15px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        gap: 5px;
+}
+
+.labels {
+        display: flex;
+        flex-direction: column;
+}
+
+.siono {
+        display: flex;
+        flex-direction: row;
+}
+
+.accordion-button {
+    background-color: #6096baff;
+    color: white;
+}
+
+.qss {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.1fr 0.2fr 0.2fr 0.2fr 0.15fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    ".....  .....  qsimgflia   qsparrafo   ....."
+    ".....  .....  qsparraf1   qsimgsimon  ....."
+    ".....  .....  qsimgfla    qsparraf2   .....";
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.qsimgflia {
+grid-area: qsimgflia;
+max-width: 100%;
+width: 250px;
+}
+
+.qsimgsimon {
+grid-area: qsimgsimon;
+max-width: 100%;
+width: 150px;
+display: flex;
+justify-items: center;
+}
+
+.qsimgfla {
+grid-area: qsimgfla;
+max-width: 100%;
+width: 300px;   
+}
+
+.qsparrafo {
+grid-area: qsparrafo;
+}
+
+.qsparraf1 {
+grid-area: qsparraf1;
+display: flex;
+align-items: center;
+}
+
+.qsparraf2 {
+grid-area: qsparraf2;
+display: flex;
+align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .valores {
+        margin-top: 30px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 0.6fr 1fr 0.6fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "... valor1 ..."
+        "... valor2 ..."
+        "... valor3 ...";
+        row-gap: 20px;
+    }
+}
