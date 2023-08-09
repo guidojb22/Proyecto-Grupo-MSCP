@@ -24,7 +24,7 @@
 .hero {
     background-image: url("../img/fondo.jpg");
     height: 91vh;
-    max-width: 100%;
+    width: 100%;
 }
 
 .title {
@@ -253,12 +253,71 @@ display: flex;
 align-items: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .valores {
         margin-top: 30px;
         display: grid;
         width: 100%;
-        grid-template-columns: 0.6fr 1fr 0.6fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "... valor1 ... valor2 ..."
+        "... ... valor3 ... ...";
+        row-gap: 20px;}
+
+        .cartitas {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "... cartita1 cartita2 ..."
+            "... cartita3 cartita4 ...";    
+            gap: 25px;
+            margin-inline: 10px;
+            max-width: 100%;
+            }
+        
+        .cartita1 {
+            grid-area: cartita1;
+        }
+
+        .cartita2 {
+            grid-area: cartita2;
+        }
+
+        .cartita3 {
+            grid-area: cartita3;
+        }
+
+        .cartita4 {
+            grid-area: cartita4;
+        }
+
+        .cartita {
+            width:100%;
+            padding: 10px;
+            background-color: #6096baff;
+            border-radius: 8px;
+            display: inline-block;
+            margin-inline: 10px;
+            margin-block: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: groove;
+            border-color: #1F1F1FFF;
+            position: relative;
+            top: 10px;
+            gap: 30px;
+        }
+
+}
+
+@media screen and (max-width: 600px) {
+    .valores {
+        margin-top: 30px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
         "... valor1 ..."
@@ -266,4 +325,52 @@ align-items: center;
         "... valor3 ...";
         row-gap: 20px;
     }
+
+
+        
+        .cartitas {
+            display: grid;
+            grid-template-columns: 0.2fr 1fr 0.2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "... cartita1 ..."
+            "... cartita2 ..."
+            "... cartita3 ..."
+            "... cartita4 ...";     
+            gap: 25px;
+            margin-inline: 10px;
+            max-width: 100%;
+            }
+        .cartita1 {
+            grid-area: cartita1;
+        }
+
+        .cartita2 {
+            grid-area: cartita2;
+        }
+
+        .cartita3 {
+            grid-area: cartita3;
+        }
+
+        .cartita4 {
+            grid-area: cartita4;
+        }
+
+        .cartita {
+            width:100%;
+            padding: 10px;
+            background-color: #6096baff;
+            border-radius: 8px;
+            display: inline-block;
+            margin-inline: 10px;
+            margin-block: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: groove;
+            border-color: #1F1F1FFF;
+            position: relative;
+            top: 10px;
+            gap: 30px;
+        }
 }
