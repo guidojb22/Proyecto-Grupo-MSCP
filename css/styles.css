@@ -207,14 +207,15 @@
     margin-top: 20px;
     width: 100%;
     display: grid;
-    grid-template-columns: 0.1fr 0.2fr 0.2fr 0.2fr 0.15fr;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr;
     grid-template-areas: 
-    ".....  .....  qsimgflia   qsparrafo   ....."
-    ".....  .....  qsparraf1   qsimgsimon  ....."
-    ".....  .....  qsimgfla    qsparraf2   .....";
+    ".....  qsimgflia   qsparrafo   ....."
+    ".....  qsparraf1   qsimgsimon  ....."
+    ".....  qsimgfla    qsparraf2   .....";
     row-gap: 20px;
     column-gap: 20px;
+    place-items: center;
 }
 
 .qsimgflia {
@@ -265,7 +266,7 @@ align-items: center;
         "... ... valor3 ... ...";
         row-gap: 20px;}
 
-        .cartitas {
+    .cartitas {
             display: grid;
             grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
             grid-template-rows: 1fr 1fr;
@@ -277,23 +278,23 @@ align-items: center;
             max-width: 100%;
             }   
         
-        .cartita1 {
+    .cartita1 {
             grid-area: cartita1;
         }
 
-        .cartita2 {
+    .cartita2 {
             grid-area: cartita2;
         }
 
-        .cartita3 {
+    .cartita3 {
             grid-area: cartita3;
         }
 
-        .cartita4 {
+    .cartita4 {
             grid-area: cartita4;
         }
 
-        .cartita {
+    .cartita {
             width:100%;
             padding: 10px;
             background-color: #6096baff;
@@ -309,7 +310,21 @@ align-items: center;
             top: 10px;
             gap: 30px;
         }
-
+        
+    .qss {
+            margin-top: 20px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            ".....  qsimgflia   qsparrafo   ....."
+            ".....  qsparraf1   qsimgsimon  ....."
+            ".....  qsimgfla    qsparraf2   .....";
+            row-gap: 5px;
+            column-gap: 10px;
+            place-items: center;
+        }
 }
 
 @media screen and (max-width: 600px) {
@@ -325,7 +340,7 @@ align-items: center;
         "... valor3 ...";
         row-gap: 20px;
     }
-       .cartitas {
+    .cartitas {
             display: grid;
             grid-template-columns: 0.2fr 1fr 0.2fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -338,23 +353,24 @@ align-items: center;
             margin-inline: 10px;
             max-width: 100%;
             }
-        .cartita1 {
+     
+    .cartita1 {
             grid-area: cartita1;
         }
 
-        .cartita2 {
+    .cartita2 {
             grid-area: cartita2;
         }
 
-        .cartita3 {
+    .cartita3 {
             grid-area: cartita3;
         }
 
-        .cartita4 {
+    .cartita4 {
             grid-area: cartita4;
         }
 
-        .cartita {
+    .cartita {
             width:100%;
             padding: 10px;
             background-color: #6096baff;
@@ -370,4 +386,21 @@ align-items: center;
             top: 10px;
             gap: 30px;
         }
+
+        .qss {
+            margin-top: 20px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 0.2fr 1fr 0.2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "... qsimgflia ..."   
+            "... qsparrafo ..."
+            "... qsimgsimon ..."
+            "... qsparraf1 ..." 
+            "... qsimgfla ..."    
+            "... qsparraf2 ...";
+            row-gap: 10px;
+            place-items: center;
+        }    
 }
