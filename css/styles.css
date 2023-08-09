@@ -275,7 +275,7 @@ align-items: center;
             gap: 25px;
             margin-inline: 10px;
             max-width: 100%;
-            }
+            }   
         
         .cartita1 {
             grid-area: cartita1;
@@ -325,10 +325,7 @@ align-items: center;
         "... valor3 ...";
         row-gap: 20px;
     }
-
-
-        
-        .cartitas {
+       .cartitas {
             display: grid;
             grid-template-columns: 0.2fr 1fr 0.2fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
