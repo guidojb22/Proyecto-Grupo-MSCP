@@ -13,6 +13,11 @@
 --uranian-blue: #a3cef1ff;
 --eerie-black: #1f1f1fff; */
 
+.navbar {
+    -webkit-animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: .1s;
+}
+
 .container-fluid {
     background-color: #274c77ff;
  }
@@ -27,7 +32,12 @@
     height: 91vh;
     width: 100%;
     background-repeat: no-repeat;
+    box-shadow: rgba(59, 28, 146, 0.373) 0px 22px 70px 4px;
+    -webkit-animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: .25s;
 }
+
+ @-webkit-keyframes slide-in-bck-center{0%{-webkit-transform:translateZ(600px);transform:translateZ(600px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes slide-in-bck-center{0%{-webkit-transform:translateZ(600px);transform:translateZ(600px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
 
 .title {
     font-weight: bold;
@@ -56,6 +66,55 @@
     top: 10px;
 }
 
+.swing-in-top-bck{-webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+}
+
+ @-webkit-keyframes swing-in-top-bck{0%{-webkit-transform:rotateX(70deg);transform:rotateX(70deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-bck{0%{-webkit-transform:rotateX(70deg);transform:rotateX(70deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+
+.cartita1 {
+    transition: all 0.5s;
+    animation-delay: 0.35s;
+}
+
+.cartita1:hover {
+    background-color: #274c77ff;
+    color: #e7ecefff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+}
+
+.cartita2 {
+    transition: all 0.5s;
+    animation-delay: 0.4s;
+}
+
+.cartita2:hover {
+    background-color: #274c77ff;
+    color: #e7ecefff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+}
+
+.cartita3 {
+    transition: all 0.5s;
+    animation-delay: 0.45s;
+}
+
+.cartita3:hover {
+    background-color: #274c77ff;
+    color: #e7ecefff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+}
+
+.cartita4 {
+    transition: all 0.5s;
+    animation-delay: 0.5s;
+}
+
+.cartita4:hover {
+    background-color: #274c77ff;
+    color: #e7ecefff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+}
+
 .cartita__imagen {
     width: 100%;
 }
@@ -78,6 +137,12 @@
     padding: 9px;
     margin: 5px;
     border-radius: 8px;
+    transition: all 0.5s;
+}
+
+.cartita__boton:hover {
+    background-color: #e7ecefff;
+    color: #1F1F1FFF;
 }
 
 .valores {
@@ -104,6 +169,14 @@
     font-size: 28px;
     display: flex;
     align-items: center;
+    transition: all 0.8s;
+    animation-delay: 0.55s;
+}
+
+.valor1:hover {
+    background-color: #274c77ff;
+    color: #e7ecefff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
 }
 
 .valor2 {
@@ -120,6 +193,14 @@
     font-size: 28px;
     display: flex;
     align-items: center;
+    transition: all 0.8s;
+    animation-delay: 0.6s;
+}
+
+.valor2:hover {
+    background-color: #274c77ff;
+    color: #e7ecefff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
 }
 
 .valor3 {
@@ -136,6 +217,14 @@
     font-size: 28px;
     display: flex;
     align-items: center;
+    transition: all 0.8s;
+    animation-delay: 0.65s;
+}
+
+.valor3:hover {
+    background-color: #274c77ff;
+    color: #e7ecefff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
 }
 
 .valores > div {
@@ -161,6 +250,8 @@
         text-align: center;
         flex-direction: column;
         gap: 10px;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: 0.7s;
 }
 
 .redes {
@@ -203,6 +294,10 @@
 .accordion-button {
     background-color: #6096baff;
     color: white;
+}
+
+.quienessomos {
+    animation-delay: .3s;
 }
 
 .qss {
@@ -294,6 +389,36 @@ align-items: center;
     top: 10px;
 }
 
+.cartita2-1 {
+    transition: all 0.5s;
+    animation-delay: 0.25s;
+}
+
+.cartita2-1:hover {
+    background-color: #274c77ff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+}
+
+.cartita2-2 {
+    transition: all 0.5s;
+    animation-delay: 0.35s;
+}
+
+.cartita2-2:hover {
+    background-color: #274c77ff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+}
+
+.cartita2-3 {
+    transition: all 0.5s;
+    animation-delay: 0.45s;
+}
+
+.cartita2-3:hover {
+    background-color: #274c77ff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+}
+
 .cartitaseg__imagen {
     width: 100%;
 }
@@ -316,6 +441,20 @@ align-items: center;
     padding: 9px;
     margin: 5px;
     border-radius: 8px;
+    transition: all 0.5s;
+}
+
+.cartitaseg__boton:hover {
+    background-color: #e7ecefff;
+    color: #1f1f1fff;
+}
+
+.accordion {
+    animation-delay: .4s;
+}
+
+.form {
+    animation-delay: .4s;
 }
 
 @media screen and (max-width: 1300px) {
