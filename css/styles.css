@@ -269,15 +269,45 @@
             font-size: 10px;
             font-weight: bold;}
 
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "formulario medios"
+    "formulario mapa";
+    place-items: center;
+}
+
+
+.formulario {
+    grid-area: formulario;
+    animation-delay: .3s;
+}
+
+.medios {
+    grid-area: medios;
+    animation-delay: .4s;
+}
+
+.mapa {
+    grid-area: mapa;
+    border: groove;
+    border-color: #1F1F1FFF;
+    border-radius: 8px;
+    animation-delay: .5s;
+}
+            
 .form {
         background-color: #6096baff;
-        margin-top: 15px;
-        margin-left: 15px;
         padding: 10px;
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 350px;
         gap: 5px;
+        border-radius: 8px;
+        border: groove;
+        border-color: #1F1F1FFF;
 }
 
 .labels {
@@ -288,6 +318,20 @@
 .siono {
         display: flex;
         flex-direction: row;
+}
+
+.medios {
+    background-color: #6096baff;
+    margin-top: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 5px;
+    border-radius: 8px;
+    animation-delay: .4s;
+    border: groove;
+    border-color: #1F1F1FFF;
 }
 
 .accordion-button {
@@ -452,10 +496,6 @@ align-items: center;
     animation-delay: .4s;
 }
 
-.form {
-    animation-delay: .4s;
-}
-
 @media screen and (max-width: 1300px) {
     .hero {
             height: 70vh;
@@ -555,6 +595,33 @@ align-items: center;
                 "... cartita2-3 ...";
         }
     }   
+
+@media screen and (max-width: 750px) {
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr;
+        grid-template-areas: 
+        "... formulario ..."
+        "... medios ..."
+        "... mapa ...";
+        place-items: center;
+    }
+
+    .medios {
+        background-color: #6096baff;
+        margin-top: -120px; 
+    }
+
+    .formulario {
+        margin-top: 50px;
+    }
+
+    .mapa {
+        margin-top: -120px; 
+    }
+}
+
 
 @media screen and (max-width: 600px) {
     .valores {
