@@ -1,0 +1,12 @@
+.navbar {
+    -webkit-animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: .1s;
+
+    .container-fluid {
+        background-color: $mainColor;
+
+        .navbar-brand {
+            color: $mainColor;
+        }
+     }
+}

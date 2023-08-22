@@ -1,0 +1,87 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "formulario medios"
+    "formulario mapa";
+    place-items: center;
+
+    @include max750 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr;
+        grid-template-areas: 
+        "... formulario ..."
+        "... medios ..."
+        "... mapa ...";
+        place-items: center;
+    }
+
+    .formulario {
+        grid-area: formulario;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: .3s;
+
+        @include max750 {
+            margin-top: 50px;
+        }
+
+        .form {
+            background-color: $secondaryColor;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            gap: 5px;
+            border-radius: 8px;
+            border: groove;
+            border-color: #1F1F1FFF;
+
+            .labels {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .siono {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }  
+
+    .mapa {
+        grid-area: mapa;
+        border: groove;
+        border-color: #1F1F1FFF;
+        border-radius: 8px;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: .5s;
+
+        @include max750 {
+            margin-top: -120px; 
+        }
+    }
+    
+    .medios {
+        background-color: $secondaryColor;
+        margin-top: 40px;
+        padding: 10px;
+        grid-area: medios;
+        animation-delay: .4s;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        gap: 5px;
+        border-radius: 8px;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: .4s;
+        border: groove;
+        border-color: #1F1F1FFF;
+
+        @include max750 {
+            background-color: $secondaryColor;
+            margin-top: -120px; 
+        }
+    }
+}

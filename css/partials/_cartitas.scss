@@ -1,0 +1,192 @@
+.cartitas {
+    display: flex;
+    margin-inline: 10px;
+
+    @include max900 {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "... cartita1 cartita2 ..."
+        "... cartita3 cartita4 ...";    
+        gap: 25px;
+        margin-inline: 10px;
+        max-width: 100%;
+    }
+
+    @include max600 {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 0.2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "... cartita1 ..."
+        "... cartita2 ..."
+        "... cartita3 ..."
+        "... cartita4 ...";     
+        gap: 25px;
+        margin-inline: 10px;
+        max-width: 100%;
+    }
+
+    .cartita {
+        width: 24%;
+        padding: 10px;
+        background-color: $secondaryColor;
+        border-radius: 8px;
+        display: inline-block;
+        margin-inline: 10px;
+        margin-block: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: groove;
+        border-color: #1F1F1FFF;
+        position: relative;
+        top: 10px;
+
+        @include max900 {
+            width:100%;
+            padding: 10px;
+            background-color: #6096baff;
+            border-radius: 8px;
+            display: inline-block;
+            margin-inline: 10px;
+            margin-block: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: groove;
+            border-color: #1F1F1FFF;
+            position: relative;
+            top: 10px;
+            gap: 30px;
+        }
+
+        @include max600 {
+            width:100%;
+            padding: 10px;
+            background-color: #6096baff;
+            border-radius: 8px;
+            display: inline-block;
+            margin-inline: 10px;
+            margin-block: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: groove;
+            border-color: #1F1F1FFF;
+            position: relative;
+            top: 10px;
+            gap: 30px;
+        }
+
+        .cartita__imagen {
+            width: 100%;
+        }
+        
+        .cartita__titulo {
+                color: #e7ecefff;
+                font-size: 22px;
+                margin-bottom: 5px;  
+        }
+        
+        .cartita__parrafo {
+            font-size: 14px;
+            color: #e7ecefff;
+        }
+        
+        .cartita__boton {
+            background-color: #1F1F1FFF;
+            color: #e7ecefff;
+            border: 0;
+            padding: 9px;
+            margin: 5px;
+            border-radius: 8px;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: #e7ecefff;
+                color: #1F1F1FFF;
+            }
+        }
+    }
+
+    .swing-in-top-bck{-webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+    }
+    
+     @-webkit-keyframes swing-in-top-bck{0%{-webkit-transform:rotateX(70deg);transform:rotateX(70deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-bck{0%{-webkit-transform:rotateX(70deg);transform:rotateX(70deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+
+    .cartita1 {
+        transition: all 0.5s;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: 0.35s;
+
+        &:hover {
+            background-color: $mainColor;
+            color: #e7ecefff;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+        }
+
+        @include max900 {
+            grid-area: cartita1;  
+        }
+
+        @include max600 {
+            grid-area: cartita1;
+        }
+    }
+    .cartita2 {
+        transition: all 0.5s;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: 0.4s;
+
+        &:hover {
+            background-color: $mainColor;
+            color: #e7ecefff;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+        }
+
+        @include max900 {
+            grid-area: cartita2;
+        }
+
+        @include max600 {
+            grid-area: cartita2;
+        }
+    }
+    .cartita3 {
+        transition: all 0.5s;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: 0.45s;
+
+        &:hover {
+            background-color: $mainColor;
+            color: #e7ecefff;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+        }    
+        
+        @include max900 {
+            grid-area: cartita3;
+        }
+
+        @include max600 {
+            grid-area: cartita3;
+        }
+    }
+    .cartita4 {
+        transition: all 0.5s;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: 0.5s;
+
+        &:hover {
+            background-color: $mainColor;
+            color: #e7ecefff;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+        }
+
+        @include max900 {
+            grid-area: cartita4;
+        }
+
+        @include max600 {
+            grid-area: cartita4;
+        }
+    }
+}

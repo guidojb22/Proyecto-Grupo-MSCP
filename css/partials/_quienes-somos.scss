@@ -1,0 +1,88 @@
+.quienessomos {
+    -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+    animation-delay: .3s;
+
+    .qss {
+        margin-top: 20px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        ".....  qsimgflia   qsparrafo   ....."
+        ".....  qsparraf1   qsimgsimon  ....."
+        ".....  qsimgfla    qsparraf2   .....";
+        row-gap: 20px;
+        column-gap: 20px;
+        place-items: center;
+
+        @include max900 {
+            margin-top: 20px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            ".....  qsimgflia   qsparrafo   ....."
+            ".....  qsparraf1   qsimgsimon  ....."
+            ".....  qsimgfla    qsparraf2   .....";
+            row-gap: 5px;
+            column-gap: 10px;
+            place-items: center;
+        }
+
+        @include max600 {
+            margin-top: 20px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 0.2fr 1fr 0.2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "... qsimgflia ..."   
+            "... qsparrafo ..."
+            "... qsimgsimon ..."
+            "... qsparraf1 ..." 
+            "... qsimgfla ..."    
+            "... qsparraf2 ...";
+            row-gap: 10px;
+            place-items: center;
+        }
+
+        .qsimgflia {
+            grid-area: qsimgflia;
+            max-width: 100%;
+            width: 250px;
+            }
+            
+            .qsimgsimon {
+            grid-area: qsimgsimon;
+            max-width: 100%;
+            width: 150px;
+            display: flex;
+            justify-items: center;
+            }
+            
+            .qsimgfla {
+            grid-area: qsimgfla;
+            max-width: 100%;
+            width: 300px;   
+            }
+            
+            .qsparrafo {
+            grid-area: qsparrafo;
+            }
+            
+            .qsparraf1 {
+            grid-area: qsparraf1;
+            display: flex;
+            align-items: center;
+            }
+            
+            .qsparraf2 {
+            grid-area: qsparraf2;
+            display: flex;
+            align-items: center;
+            } 
+            
+    }
+}

@@ -1,0 +1,112 @@
+.valores {
+    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.3fr repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "... valor1 valor2 valor3 ...";
+
+    @include max900 {
+        margin-top: 30px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "... valor1 ... valor2 ..."
+        "... ... valor3 ... ...";
+        row-gap: 20px;
+    }
+
+    @include max600 {
+        margin-top: 30px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "... valor1 ..."
+        "... valor2 ..."
+        "... valor3 ...";
+        row-gap: 20px;
+    }
+
+    > div {
+        place-content: center;
+    }
+
+    .valor1 {
+        width: 200px;
+        height: 200px;
+        background-color: $secondaryColor;
+        color: #e7ecefff;
+        grid-area: valor1;
+        border-radius: 25px;
+        border: groove;
+        border-color: #1F1F1FFF;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        transition: all 0.8s;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: 0.55s;
+
+        &:hover {
+            background-color: $mainColor;
+            color: #e7ecefff;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+        }
+    }
+    .valor2 {
+        width: 200px;
+        height: 200px;
+        background-color: $secondaryColor;
+        color: #e7ecefff;
+        grid-area: valor2;
+        border-radius: 25px;
+        border: groove;
+        border-color: #1F1F1FFF;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        transition: all 0.8s;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: 0.6s;
+
+        &:hover {
+            background-color: $mainColor;
+            color: #e7ecefff;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+        }
+    }
+
+    .valor3 {
+        width: 200px;
+        height: 200px;
+        background-color: $secondaryColor;
+        color: #e7ecefff;
+        grid-area: valor3;
+        border-radius: 25px;
+        border: groove;
+        border-color: #1F1F1FFF;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        transition: all 0.8s;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: 0.65s;
+
+        &:hover {
+            background-color: $mainColor;
+            color: #e7ecefff;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+        }
+    }
+}

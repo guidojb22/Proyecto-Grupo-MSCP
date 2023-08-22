@@ -1,0 +1,9 @@
+.accordion {
+    -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+    animation-delay: .4s;
+
+    .accordion-button {
+        background-color: $secondaryColor;
+        color: white;
+    }    
+}

@@ -1,0 +1,101 @@
+.cartitasseg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "cartita2-1 cartita2-2 cartita2-3";
+    place-items: center;
+
+    @include max900 {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 0.3fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "... cartita2-1 ..."
+            "... cartita2-2 ..."
+            "... cartita2-3 ...";
+    }
+
+    .cartitaseg {
+        width: 85%;
+        padding: 10px;
+        background-color: $secondaryColor;
+        border-radius: 8px;
+        display: inline-block;
+        margin-inline: 10px;
+        margin-block: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: groove;
+        border-color: #1F1F1FFF;
+        position: relative;
+        top: 10px;
+
+        .cartitaseg__imagen {
+            width: 100%;
+        }
+        
+        .cartitaseg__titulo {  
+                color: #e7ecefff;
+                font-size: 22px;
+                margin-bottom: 5px;  
+        }
+        
+        .cartitaseg__parrafo {
+            font-size: 14px;
+            color: #e7ecefff;
+        }
+        
+        .cartitaseg__boton {
+            background-color: #1F1F1FFF;
+            color: #e7ecefff;
+            border: 0;
+            padding: 9px;
+            margin: 5px;
+            border-radius: 8px;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: #e7ecefff;
+                color: #1f1f1fff;
+            }
+        }
+    }
+
+    .cartita2-1 {
+        grid-area: cartita2-1;
+        transition: all 0.5s;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: 0.25s;
+
+        &:hover {
+            background-color: $mainColor;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+        }
+    }
+    
+    .cartita2-2 {
+        grid-area: cartita2-2;
+        transition: all 0.5s;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: 0.35s;
+
+        &:hover {
+            background-color: $mainColor;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+        }
+    }
+
+    .cartita2-3 {
+        grid-area: cartita2-3;
+        transition: all 0.5s;
+        -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+        animation-delay: 0.45s;
+
+        &:hover {
+            background-color: $mainColor;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+        }
+    }
+    
+}
