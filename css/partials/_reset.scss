@@ -3,4 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: $fontPrincipal;
+
+    &::selection {
+        background-color: #e7ecefff;
+        color: $mainColor;
+    }
 }
