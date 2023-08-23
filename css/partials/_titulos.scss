@@ -4,11 +4,12 @@
     font-size: 26px;
     display: flex;
     justify-content: center;
+    margin-bottom: 0px;
     padding-block: 5px;
     border: groove;
     border-color: #1F1F1FFF;
-    -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
-    animation-delay: 0.25s;
+    -webkit-animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 0.18s;
     font-weight: bold;
     transition: all 0.7s;
 
