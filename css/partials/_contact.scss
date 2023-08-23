@@ -23,6 +23,10 @@
         -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
         animation-delay: .3s;
 
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 22px 70px 4px;
+        }
+
         @include max750 {
             margin-top: 50px;
         }
@@ -58,6 +62,10 @@
         -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
         animation-delay: .5s;
 
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 22px 70px 4px;
+        }
+
         @include max750 {
             margin-top: -120px; 
         }
@@ -78,6 +86,10 @@
         animation-delay: .4s;
         border: groove;
         border-color: #1F1F1FFF;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 22px 70px 4px;
+        }
 
         @include max750 {
             background-color: $secondaryColor;

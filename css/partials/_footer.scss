@@ -22,7 +22,12 @@
             margin-inline: 10px;
             justify-content: center;
             
-            .imgRedes {width: 30px;}
+            .imgRedes {width: 30px;
+            
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+                }  
+            }
 
         }
     }

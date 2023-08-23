@@ -5,5 +5,11 @@
     .accordion-button {
         background-color: $secondaryColor;
         color: white;
+        transition: all 0.7s;
+
+        &:hover {
+            background-color: $mainColor;
+            color: #e7ecefff;
+        }
     }    
 }

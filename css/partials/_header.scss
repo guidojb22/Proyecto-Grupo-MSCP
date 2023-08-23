@@ -1,9 +1,20 @@
 .navbar {
     -webkit-animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
     animation-delay: .1s;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
     .container-fluid {
         background-color: $mainColor;
+
+        .navbar {
+
+            .container {
+                padding-right: 0px;
+                padding-left: 5px;
+            }
+
+        }
 
         .navbar-brand {
             color: $mainColor;

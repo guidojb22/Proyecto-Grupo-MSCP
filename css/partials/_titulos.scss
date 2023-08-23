@@ -1,0 +1,18 @@
+.titulotexto {
+    background-color: $mainColor;
+    color: #e7ecefff;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    padding-block: 5px;
+    border: groove;
+    border-color: #1F1F1FFF;
+    -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
+    animation-delay: 0.25s;
+    font-weight: bold;
+    transition: all 0.7s;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 22px 70px 4px;
+    }
+}
