@@ -1,27 +1,27 @@
 .contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "formulario medios"
-    "formulario mapa";
+    "... formulario medios ..."
+    "... formulario mapa ...";
     place-items: center;
 
     @include max750 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.2fr 1fr 0.2fr;
-        grid-template-areas: 
+        grid-template-areas:
         "... formulario ..."
         "... medios ..."
         "... mapa ...";
-        place-items: center;
     }
 
     .formulario {
         grid-area: formulario;
         -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
         animation-delay: .3s;
+        max-width: 100%;
 
         &:hover {
             box-shadow: rgba(0, 0, 0, 0.25) 0px 22px 70px 4px;
@@ -29,6 +29,8 @@
 
         @include max750 {
             margin-top: 50px;
+            margin-left: 15px;
+            margin-right: 15px;
         }
 
         .form {
@@ -36,11 +38,12 @@
             padding: 10px;
             display: flex;
             flex-direction: column;
-            width: 350px;
+            width: 300px;
             gap: 5px;
             border-radius: 8px;
             border: groove;
             border-color: #1F1F1FFF;
+            max-width: 100%;
 
             .labels {
                 display: flex;
@@ -68,6 +71,7 @@
 
         @include max750 {
             margin-top: -120px; 
+            width: 300px;
         }
     }
     
@@ -76,16 +80,16 @@
         margin-top: 40px;
         padding: 10px;
         grid-area: medios;
-        animation-delay: .4s;
         display: flex;
         flex-direction: column;
-        width: 350px;
+        width: 300px;
         gap: 5px;
         border-radius: 8px;
         -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
         animation-delay: .4s;
         border: groove;
         border-color: #1F1F1FFF;
+        max-width: 100%;
 
         &:hover {
             box-shadow: rgba(0, 0, 0, 0.25) 0px 22px 70px 4px;
