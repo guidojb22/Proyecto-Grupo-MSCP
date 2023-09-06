@@ -4,7 +4,7 @@
 
     @include max900 {
         display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "... cartita1 cartita2 ..."
@@ -16,7 +16,7 @@
 
     @include max600 {
         display: grid;
-        grid-template-columns: 0.2fr 1fr 0.2fr;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "... cartita1 ..."

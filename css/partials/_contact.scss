@@ -38,12 +38,16 @@
             padding: 10px;
             display: flex;
             flex-direction: column;
-            width: 300px;
+            width: 350px;
             gap: 5px;
             border-radius: 8px;
             border: groove;
             border-color: #1F1F1FFF;
             max-width: 100%;
+
+            @include max900 {
+                width: 300px;
+            }
 
             .labels {
                 display: flex;
@@ -82,7 +86,7 @@
         grid-area: medios;
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 350px;
         gap: 5px;
         border-radius: 8px;
         -webkit-animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-bck .6s cubic-bezier(.175,.885,.32,1.275) both;
@@ -95,9 +99,13 @@
             box-shadow: rgba(0, 0, 0, 0.25) 0px 22px 70px 4px;
         }
 
+        @include max900 {
+            width: 300px;
+        }
+
         @include max750 {
             background-color: $secondaryColor;
-            margin-top: -120px; 
+            margin-top: -120px;
         }
     }
 }

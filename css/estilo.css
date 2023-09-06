@@ -73,7 +73,7 @@
 .titulotexto {
   background-color: #274c77;
   color: #e7ecef;
-  font-size: 26px;
+  font-size: 23.5px;
   display: flex;
   justify-content: center;
   margin-bottom: 0px;
@@ -96,7 +96,7 @@
 @media screen and (max-width: 900px) {
   .cartitas {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "... cartita1 cartita2 ..." "... cartita3 cartita4 ...";
     gap: 25px;
@@ -107,7 +107,7 @@
 @media screen and (max-width: 600px) {
   .cartitas {
     display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "... cartita1 ..." "... cartita2 ..." "... cartita3 ..." "... cartita4 ...";
     gap: 25px;
@@ -473,12 +473,17 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 350px;
   gap: 5px;
   border-radius: 8px;
   border: groove;
   border-color: #1f1f1f;
   max-width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .contact .formulario .form {
+    width: 300px;
+  }
 }
 .contact .formulario .form .labels {
   display: flex;
@@ -512,7 +517,7 @@
   grid-area: medios;
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 350px;
   gap: 5px;
   border-radius: 8px;
   animation: swing-in-top-bck 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
@@ -523,6 +528,11 @@
 }
 .contact .medios:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 22px 70px 4px;
+}
+@media screen and (max-width: 900px) {
+  .contact .medios {
+    width: 300px;
+  }
 }
 @media screen and (max-width: 750px) {
   .contact .medios {
@@ -650,6 +660,7 @@
 }
 .cartitasseg .cartitaseg .cartitaseg__imagen {
   width: 100%;
+  margin-bottom: 10px;
 }
 .cartitasseg .cartitaseg .cartitaseg__titulo {
   color: #e7ecef;
